@@ -1,0 +1,107 @@
+.contactmeContainer {
+  display: flex;
+  background: wheat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contactmeContent {
+  width: 97%;
+  display: flex;
+}
+
+.contactmeForm {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactmePicContainer {
+  width: 50%;
+  height: 100%;
+}
+
+.contactmePic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactmeForm > h1 {
+  font-size: 5em;
+}
+
+.contactmeForm > h2 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.contactmeForm > input,
+textarea {
+  width: 30em;
+  height: 2em;
+  margin-bottom: 1%;
+  background: rgb(55, 55, 55);
+  color: wheat;
+  border: 3px rgb(24, 24, 24) solid;
+  border-radius: 10px;
+}
+
+.contactmeForm > input::placeholder,
+textarea::placeholder {
+  color: wheat;
+  padding-left: 10px;
+}
+
+.contactmeForm > textarea {
+  height: 5em;
+}
+
+.contactmeForm > textarea::placeholder {
+  /* color: wheat; */
+}
+
+.contactmeForm > button {
+  background: rgb(55, 55, 55);
+  color: wheat;
+  border: 3px rgb(24, 24, 24) solid;
+  border-radius: 12px;
+  width: 5em;
+  height: 2em;
+}
+
+@media (max-width: 750px) {
+  .contactmeContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactmeForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactmeForm > h1 {
+    font-size: 3em;
+  }
+  .contactmeForm > h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  .contactmeForm > input,
+  textarea {
+    width: 80%;
+  }
+  .contactmePicContainer {
+    display: none;
+  }
+}

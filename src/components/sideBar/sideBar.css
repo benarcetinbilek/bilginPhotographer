@@ -1,0 +1,61 @@
+.sideBar {
+  border-right: 4px rgb(24, 24, 24) solid;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 3%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.sideBarFixed {
+  border-right: 4px rgb(24, 24, 24) solid;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* top: 0;
+  left: 0; */
+  width: 3%;
+  height: 100%;
+  /* transform: translateX(-100%); */
+  /* transition: transform 0.5s ease-in-out; */
+}
+
+.sideBarOpen {
+  transform: translateX(0%);
+}
+
+.sideBarWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 95%;
+}
+
+.sideBarWrapper > .smallText {
+  transform: rotate(-90deg);
+}
+
+.backArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(24, 24, 24) 2px solid;
+  border-radius: 500px;
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 750px) {
+  .sideBar {
+    display: none;
+  }
+}

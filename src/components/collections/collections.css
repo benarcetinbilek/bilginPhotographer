@@ -1,0 +1,83 @@
+.collections {
+  height: 100%;
+  background-color: rgb(24, 24, 24);
+  min-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 2s ease-in-out;
+  position: relative;
+}
+
+.collectionsClicked {
+  background-color: rgb(212, 177, 111);
+}
+
+.collectionsWrapper {
+  width: 97%;
+  display: flex;
+  transition: width 2s ease-in-out;
+  /* opacity: 0.5; */
+}
+.wrapperClicked {
+  width: 89%;
+}
+
+.collectionsWrapper > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.collectionsWrapper > div::-webkit-scrollbar {
+  display: none;
+}
+
+.collectionsImage {
+  width: 100%;
+  height: 42vh;
+  object-fit: cover;
+  padding: 5px 0;
+  transition: height 2s ease-in-out;
+}
+
+.cIClicked {
+  height: 90vh;
+}
+
+.secondLine {
+  margin: 0 10px;
+}
+
+.firstLineInner {
+  transition: transform 1.5s ease-in-out 0.5s;
+}
+
+.firstLineInnerAnimated {
+  transform: translateY(-32%);
+}
+
+.secondLineInner {
+  transform: translateY(-30%);
+  transition: transform 1.5s ease-in-out 0.5s;
+}
+.secondLineInnerAnimated {
+  transform: translateY(0%);
+}
+
+.thirdLineInner {
+  transition: transform 1.5s ease-in-out 0.5s;
+}
+.thirdLineInnerAnimated {
+  transform: translateY(-35%);
+}
+
+@media (max-width: 750px) {
+  .collections {
+    display: none;
+  }
+}

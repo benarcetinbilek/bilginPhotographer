@@ -1,0 +1,19 @@
+.collectionsMContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collectionsMWrapper {
+  width: 97%;
+  height: 98%;
+  overflow: scroll;
+}
+
+.collectionsMWrapper > img {
+  width: 100%;
+}

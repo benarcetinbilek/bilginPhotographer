@@ -1,0 +1,36 @@
+.openingAnimationContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.openingAnimationUpper {
+  height: 50%;
+  width: 100vw;
+  background: rgb(24, 24, 24);
+  animation: openingAnimationUpper 1s ease-in-out forwards;
+}
+
+.openingAnimationLower {
+  height: 50%;
+  width: 100vw;
+  background: rgb(24, 24, 24);
+  animation: openingAnimationLower 1s ease-in-out forwards;
+}
+
+@keyframes openingAnimationUpper {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes openingAnimationLower {
+  100% {
+    transform: translateY(100%);
+  }
+}
