@@ -1,3 +1,14 @@
-handle browser back button navigateBack(previousPage) and hadnle the transitions
-animations could be one one acual pic and a thumbnail in same id in array when
-singlepic click get actual
+CLIENT
+- handle browser back button navigateBack(previousPage) and hadnle the transitions
+- animations could be one one acual pic and a thumbnail in same id in array when
+- singlepic click get actual
+- renew about me page design for web only
+- renew contact me page design
+- new navbar at the top for collections 
+- new grid view feature for collections(it needs to change default after clicking back button)
+
+SERVER
+-
+
+ADMIN PAGE
+- 
